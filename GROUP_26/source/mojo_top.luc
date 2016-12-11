@@ -1,0 +1,171 @@
+module mojo_top(
+    input clk,              // 50MHz clock
+    input rst_n,            // reset button (active low)
+    output led [8],         // 8 user controllable LEDs
+    input cclk,             // configuration clock, AVR ready when high
+    output spi_miso,        // AVR SPI MISO
+    input spi_ss,           // AVR SPI Slave Select
+    input spi_mosi,         // AVR SPI MOSI
+    input spi_sck,          // AVR SPI Clock
+    output spi_channel [4], // AVR general purpose pins (used by default to select ADC channel)
+    input avr_tx,           // AVR TX (FPGA RX)
+    output avr_rx,          // AVR RX (FPGA TX)
+    input avr_rx_busy,      // AVR RX buffer full
+    input btn[5],
+    output ledio[8],    
+    output ledr[3],
+    input btn5
+    //output count[8]        // press counter
+  )  {
+  
+  sig rst;
+  var i;
+  var delay;
+  var aState;
+  var bState;
+  var cState;
+  var dState;
+  var eState;
+  var modeState;
+  var easyMode;
+  var mediumMode;
+  var hardMode;
+  
+  sig out[8];
+  
+  
+  .clk(clk){
+  .rst(rst){
+    fsm s={EASY,MID,HARD};
+    }    
+
+    
+    reset_conditioner reset_cond;
+  }
+
+  
+  
+  always {
+    reset_cond.in = ~rst_n; // input raw inverted reset signal
+    rst = reset_cond.out;   // conditioned reset
+    
+    led = 8h00;             // turn LEDs off
+    spi_miso = bz;          // not using SPI
+    spi_channel = bzzzz;    // not using flags
+    avr_rx = bz;            // not using serial port
+    
+    //Easy mode    
+    if(btn[0]==0){
+      if(aState==1){
+        aState=0;
+      }
+      else if(aState==0){
+        aState=1;
+      }
+    }
+    
+    if(btn[1]==0){
+      if(bState==1){
+        bState=0;
+      }
+      else if(bState==0){
+        bState=1;
+      }
+    }
+    
+    if(btn[2]==0){
+      if(cState==1){
+        cState=0;
+      }
+      else if(cState==0){
+        cState=1;
+      }
+    }
+    
+    if(btn[3]==0){
+      if(dState==1){
+        dState=0;
+      }
+      else if(dState==0){
+        dState=1;
+      }
+    }
+
+    if(btn[4]==0){
+      if(eState==1){
+        eState=0;
+      }
+      else if(eState==0){
+        eState=1;
+      }
+    }
+
+    
+    
+    out[0]=bState^cState^dState;
+    out[1]=aState^cState;
+    out[2]=eState;
+    out[3]=aState^dState;
+    out[4]=aState^bState;
+    out[5]=eState;
+    
+    out[6]=cState^dState^eState;
+    out[7]=bState;        
+    ledio[0]=out[0];
+    ledio[1]=out[1];
+    ledio[2]=out[2];
+    ledio[3]=out[3];
+    ledio[4]=out[4];
+    ledio[5]=out[5];
+    ledio[6]=out[6];
+    ledio[7]=out[7];
+      
+    ledr[0]=hardMode;
+    ledr[1]=mediumMode;
+    ledr[2]=easyMode;
+    
+
+    case (s.q){
+      s.EASY:
+      if (btn5==0){ 
+        easyMode=1;
+        mediumMode=0;
+        hardMode=0;
+        s.d=s.MID;
+        aState=0;
+        bState=0;
+        cState=0;
+        dState=0;
+        eState=0;
+        }
+
+      s.MID:
+      if (btn5==0){
+        easyMode=0;
+        mediumMode=1;
+        hardMode=0;
+        s.d=s.HARD;
+        aState=0;
+        bState=0;
+        cState=0;
+        dState=0;
+        eState=0;
+        }
+                
+      s.HARD:
+
+      if (btn5==0){
+        easyMode=0;
+        mediumMode=0;
+        hardMode=1;
+        s.d=s.EASY;
+        aState=0;
+        bState=0;
+        cState=0;
+        dState=0;
+        eState=0;
+        }
+    }
+    
+  }
+}

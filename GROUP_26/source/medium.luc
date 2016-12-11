@@ -1,0 +1,96 @@
+module medium(
+    output led [8],         // 8 user controllable LEDs
+    output spi_miso,        // AVR SPI MISO
+
+    output spi_channel [4], // AVR general purpose pins (used by default to select ADC channel)
+    output avr_rx,          // AVR RX (FPGA TX)
+    input btn[5],
+    output ledio[8]
+    
+    //output count[8]        // press counter
+  )  {
+  
+
+  var aState;
+  var bState;
+  var cState;
+  var dState;
+  var eState;
+  
+  
+  always {
+    
+    led = 8h00;             // turn LEDs off
+    spi_miso = bz;          // not using SPI
+    spi_channel = bzzzz;    // not using flags
+    avr_rx = bz;            // not using serial port
+    
+    if(btn[0]==0){
+      if(aState==1){
+        aState=0;
+      }
+      else if(aState==0){
+        aState=1;
+      }
+    }
+    
+    if(btn[1]==0){
+      if(bState==1){
+        bState=0;
+      }
+      else if(bState==0){
+        bState=1;
+      }
+    }
+    
+    if(btn[2]==0){
+      if(cState==1){
+        cState=0;
+      }
+      else if(cState==0){
+        cState=1;
+      }
+    }
+    
+    if(btn[3]==0){
+      if(dState==1){
+        dState=0;
+      }
+      else if(dState==0){
+        dState=1;
+      }
+    }
+    
+    if(btn[4]==0){
+      if(eState==1){
+        eState=0;
+      }
+      else if(eState==0){
+        eState=1;
+      }
+    }
+    
+    
+    led=8x{btn[0]};
+    ledio[0]=bState^cState^dState;
+    ledio[1]=aState^cState;
+    ledio[2]=eState;
+    ledio[3]=aState^dState;
+    ledio[4]=aState^bState;
+    ledio[5]=eState;
+    ledio[6]=cState^dState^eState;
+    ledio[7]=bState;        
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+  }
+}

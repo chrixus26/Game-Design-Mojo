@@ -1,0 +1,803 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Reading design: mojo_top_0.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "mojo_top_0.prj"
+
+---- Target Parameters
+Target Device                      : xc6slx9tqg144-2
+Output File Name                   : "mojo_top_0.ngc"
+
+---- Source Options
+Top Module Name                    : mojo_top_0
+
+---- General Options
+Optimization Goal                  : speed
+Optimization Effort                : 1
+Netlist Hierarchy                  : rebuilt
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:/Users/User/Documents/mojo/GROUP_26/work/planAhead/GROUP_26/GROUP_26.srcs/sources_1/imports/verilog/reset_conditioner_1.v" into library work
+Parsing module <reset_conditioner_1>.
+Analyzing Verilog file "C:/Users/User/Documents/mojo/GROUP_26/work/planAhead/GROUP_26/GROUP_26.srcs/sources_1/imports/verilog/mojo_top_0.v" into library work
+Parsing module <mojo_top_0>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <mojo_top_0>.
+
+Elaborating module <reset_conditioner_1>.
+WARNING:HDLCompiler:413 - "C:/Users/User/Documents/mojo/GROUP_26/work/planAhead/GROUP_26/GROUP_26.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 121: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:/Users/User/Documents/mojo/GROUP_26/work/planAhead/GROUP_26/GROUP_26.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 122: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:/Users/User/Documents/mojo/GROUP_26/work/planAhead/GROUP_26/GROUP_26.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 123: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:/Users/User/Documents/mojo/GROUP_26/work/planAhead/GROUP_26/GROUP_26.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 124: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:/Users/User/Documents/mojo/GROUP_26/work/planAhead/GROUP_26/GROUP_26.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 125: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:/Users/User/Documents/mojo/GROUP_26/work/planAhead/GROUP_26/GROUP_26.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 126: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:/Users/User/Documents/mojo/GROUP_26/work/planAhead/GROUP_26/GROUP_26.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 127: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:/Users/User/Documents/mojo/GROUP_26/work/planAhead/GROUP_26/GROUP_26.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 128: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:/Users/User/Documents/mojo/GROUP_26/work/planAhead/GROUP_26/GROUP_26.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 137: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:/Users/User/Documents/mojo/GROUP_26/work/planAhead/GROUP_26/GROUP_26.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 138: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:/Users/User/Documents/mojo/GROUP_26/work/planAhead/GROUP_26/GROUP_26.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 139: Result of 32-bit expression is truncated to fit in 1-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <mojo_top_0>.
+    Related source file is "C:/Users/User/Documents/mojo/GROUP_26/work/planAhead/GROUP_26/GROUP_26.srcs/sources_1/imports/verilog/mojo_top_0.v".
+WARNING:Xst:647 - Input <cclk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <spi_ss> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <spi_mosi> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <spi_sck> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <avr_tx> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <avr_rx_busy> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 2-bit register for signal <M_s_q>.
+    Found finite state machine <FSM_0> for signal <M_s_q>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | M_reset_cond_out (positive)                    |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit tristate buffer for signal <spi_miso> created at line 67
+    Found 1-bit tristate buffer for signal <spi_channel<3>> created at line 67
+    Found 1-bit tristate buffer for signal <spi_channel<2>> created at line 67
+    Found 1-bit tristate buffer for signal <spi_channel<1>> created at line 67
+    Found 1-bit tristate buffer for signal <spi_channel<0>> created at line 67
+    Found 1-bit tristate buffer for signal <avr_rx> created at line 67
+WARNING:Xst:737 - Found 1-bit latch for signal <aState<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aState<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <bState<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <bState<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <cState<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <cState<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <dState<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <dState<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <eState<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <eState<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <easyMode<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <mediumMode<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hardMode<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred  13 Latch(s).
+	inferred  26 Multiplexer(s).
+	inferred   6 Tristate(s).
+	inferred   1 Finite State Machine(s).
+Unit <mojo_top_0> synthesized.
+
+Synthesizing Unit <reset_conditioner_1>.
+    Related source file is "C:/Users/User/Documents/mojo/GROUP_26/work/planAhead/GROUP_26/GROUP_26.srcs/sources_1/imports/verilog/reset_conditioner_1.v".
+    Found 4-bit register for signal <M_stage_q>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <reset_conditioner_1> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 1
+ 4-bit register                                        : 1
+# Latches                                              : 13
+ 1-bit latch                                           : 13
+# Multiplexers                                         : 26
+ 1-bit 2-to-1 multiplexer                              : 16
+ 32-bit 2-to-1 multiplexer                             : 10
+# Tristates                                            : 6
+ 1-bit tristate buffer                                 : 6
+# FSMs                                                 : 1
+# Xors                                                 : 7
+ 32-bit xor2                                           : 7
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 4
+ Flip-Flops                                            : 4
+# Multiplexers                                         : 26
+ 1-bit 2-to-1 multiplexer                              : 16
+ 32-bit 2-to-1 multiplexer                             : 10
+# FSMs                                                 : 1
+# Xors                                                 : 7
+ 32-bit xor2                                           : 7
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <bState_31> (without init value) has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <aState_30> (without init value) has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <eState_31> (without init value) has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <cState_31> (without init value) has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dState_31> (without init value) has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <M_s_q[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+-------------------
+
+Optimizing unit <mojo_top_0> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block mojo_top_0, actual ratio is 0.
+
+Final Macro Processing ...
+
+Processing Unit <mojo_top_0> :
+INFO:Xst:741 - HDL ADVISOR - A 4-bit shift register was found for signal <reset_cond/M_stage_q_3> and currently occupies 4 logic cells (2 slices). Removing the set/reset logic would take advantage of SRL32 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+Unit <mojo_top_0> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 6
+ Flip-Flops                                            : 6
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : mojo_top_0.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 25
+#      GND                         : 2
+#      INV                         : 1
+#      LUT2                        : 3
+#      LUT3                        : 3
+#      LUT4                        : 13
+#      LUT6                        : 2
+#      VCC                         : 1
+# FlipFlops/Latches                : 14
+#      FDR                         : 2
+#      FDS                         : 4
+#      LD                          : 8
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 32
+#      IBUF                        : 7
+#      OBUF                        : 19
+#      OBUFT                       : 6
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              11  out of  11440     0%  
+ Number of Slice LUTs:                   22  out of   5720     0%  
+    Number used as Logic:                22  out of   5720     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     26
+   Number with an unused Flip Flop:      15  out of     26    57%  
+   Number with an unused LUT:             4  out of     26    15%  
+   Number of fully used LUT-FF pairs:     7  out of     26    26%  
+   Number of unique control sets:         8
+
+IO Utilization: 
+ Number of IOs:                          39
+ Number of bonded IOBs:                  33  out of    102    32%  
+    IOB Flip Flops/Latches:               3
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-------------------------------------------------------------------+------------------------+-------+
+Clock Signal                                                       | Clock buffer(FF name)  | Load  |
+-------------------------------------------------------------------+------------------------+-------+
+M_s_q[1]_GND_200_o_Mux_463_o(Mmux_M_s_q[1]_GND_200_o_Mux_463_o11:O)| NONE(*)(easyMode_0)    | 3     |
+M_s_q[1]_btn[0]_Mux_83_o(Mmux_M_s_q[1]_btn[0]_Mux_83_o11:O)        | NONE(*)(aState_0)      | 1     |
+M_s_q[1]_btn[2]_Mux_209_o(Mmux_M_s_q[1]_btn[2]_Mux_209_o11:O)      | NONE(*)(cState_0)      | 1     |
+M_s_q[1]_btn[4]_Mux_337_o(Mmux_M_s_q[1]_btn[4]_Mux_337_o11:O)      | NONE(*)(eState_0)      | 1     |
+M_s_q[1]_btn[3]_Mux_273_o(Mmux_M_s_q[1]_btn[3]_Mux_273_o11:O)      | NONE(*)(dState_0)      | 1     |
+M_s_q[1]_btn[1]_Mux_145_o(Mmux_M_s_q[1]_btn[1]_Mux_145_o11:O)      | NONE(*)(bState_0)      | 1     |
+clk                                                                | BUFGP                  | 6     |
+-------------------------------------------------------------------+------------------------+-------+
+(*) These 6 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 2.112ns (Maximum Frequency: 473.485MHz)
+   Minimum input arrival time before clock: 3.526ns
+   Maximum output required time after clock: 5.508ns
+   Maximum combinational path delay: 6.434ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'M_s_q[1]_btn[0]_Mux_83_o'
+  Clock period: 1.675ns (frequency: 597.015MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.675ns (Levels of Logic = 1)
+  Source:            aState_0 (LATCH)
+  Destination:       aState_0 (LATCH)
+  Source Clock:      M_s_q[1]_btn[0]_Mux_83_o falling
+  Destination Clock: M_s_q[1]_btn[0]_Mux_83_o falling
+
+  Data Path: aState_0 to aState_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               4   0.581   0.804  aState_0 (aState_0)
+     LUT4:I3->O            1   0.254   0.000  Mmux_M_s_q[1]_aState[31]_Mux_140_o11 (M_s_q[1]_aState[31]_Mux_140_o)
+     LD:D                      0.036          aState_0
+    ----------------------------------------
+    Total                      1.675ns (0.871ns logic, 0.804ns route)
+                                       (52.0% logic, 48.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'M_s_q[1]_btn[2]_Mux_209_o'
+  Clock period: 1.675ns (frequency: 597.015MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.675ns (Levels of Logic = 1)
+  Source:            cState_0 (LATCH)
+  Destination:       cState_0 (LATCH)
+  Source Clock:      M_s_q[1]_btn[2]_Mux_209_o falling
+  Destination Clock: M_s_q[1]_btn[2]_Mux_209_o falling
+
+  Data Path: cState_0 to cState_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               4   0.581   0.804  cState_0 (cState_0)
+     LUT4:I3->O            1   0.254   0.000  Mmux_M_s_q[1]_cState[31]_Mux_268_o11 (M_s_q[1]_cState[31]_Mux_268_o)
+     LD:D                      0.036          cState_0
+    ----------------------------------------
+    Total                      1.675ns (0.871ns logic, 0.804ns route)
+                                       (52.0% logic, 48.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'M_s_q[1]_btn[4]_Mux_337_o'
+  Clock period: 1.637ns (frequency: 610.874MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.637ns (Levels of Logic = 1)
+  Source:            eState_0 (LATCH)
+  Destination:       eState_0 (LATCH)
+  Source Clock:      M_s_q[1]_btn[4]_Mux_337_o falling
+  Destination Clock: M_s_q[1]_btn[4]_Mux_337_o falling
+
+  Data Path: eState_0 to eState_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               3   0.581   0.766  eState_0 (eState_0)
+     LUT4:I3->O            1   0.254   0.000  Mmux_M_s_q[1]_eState[31]_Mux_396_o11 (M_s_q[1]_eState[31]_Mux_396_o)
+     LD:D                      0.036          eState_0
+    ----------------------------------------
+    Total                      1.637ns (0.871ns logic, 0.766ns route)
+                                       (53.2% logic, 46.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'M_s_q[1]_btn[3]_Mux_273_o'
+  Clock period: 1.675ns (frequency: 597.015MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.675ns (Levels of Logic = 1)
+  Source:            dState_0 (LATCH)
+  Destination:       dState_0 (LATCH)
+  Source Clock:      M_s_q[1]_btn[3]_Mux_273_o falling
+  Destination Clock: M_s_q[1]_btn[3]_Mux_273_o falling
+
+  Data Path: dState_0 to dState_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               4   0.581   0.804  dState_0 (dState_0)
+     LUT4:I3->O            1   0.254   0.000  Mmux_M_s_q[1]_dState[31]_Mux_332_o11 (M_s_q[1]_dState[31]_Mux_332_o)
+     LD:D                      0.036          dState_0
+    ----------------------------------------
+    Total                      1.675ns (0.871ns logic, 0.804ns route)
+                                       (52.0% logic, 48.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'M_s_q[1]_btn[1]_Mux_145_o'
+  Clock period: 1.675ns (frequency: 597.015MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.675ns (Levels of Logic = 1)
+  Source:            bState_0 (LATCH)
+  Destination:       bState_0 (LATCH)
+  Source Clock:      M_s_q[1]_btn[1]_Mux_145_o falling
+  Destination Clock: M_s_q[1]_btn[1]_Mux_145_o falling
+
+  Data Path: bState_0 to bState_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               4   0.581   0.804  bState_0 (bState_0)
+     LUT4:I3->O            1   0.254   0.000  Mmux_M_s_q[1]_bState[31]_Mux_204_o11 (M_s_q[1]_bState[31]_Mux_204_o)
+     LD:D                      0.036          bState_0
+    ----------------------------------------
+    Total                      1.675ns (0.871ns logic, 0.804ns route)
+                                       (52.0% logic, 48.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.112ns (frequency: 473.485MHz)
+  Total number of paths / destination ports: 9 / 7
+-------------------------------------------------------------------------
+Delay:               2.112ns (Levels of Logic = 1)
+  Source:            M_s_q_FSM_FFd2 (FF)
+  Destination:       M_s_q_FSM_FFd2 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: M_s_q_FSM_FFd2 to M_s_q_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             15   0.525   1.263  M_s_q_FSM_FFd2 (M_s_q_FSM_FFd2)
+     LUT3:I1->O            1   0.250   0.000  M_s_q_FSM_FFd2-In1 (M_s_q_FSM_FFd2-In)
+     FDR:D                     0.074          M_s_q_FSM_FFd2
+    ----------------------------------------
+    Total                      2.112ns (0.849ns logic, 1.263ns route)
+                                       (40.2% logic, 59.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'M_s_q[1]_btn[0]_Mux_83_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.820ns (Levels of Logic = 2)
+  Source:            btn5 (PAD)
+  Destination:       aState_0 (LATCH)
+  Destination Clock: M_s_q[1]_btn[0]_Mux_83_o falling
+
+  Data Path: btn5 to aState_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            13   1.328   1.206  btn5_IBUF (btn5_IBUF)
+     LUT4:I2->O            1   0.250   0.000  Mmux_M_s_q[1]_aState[31]_Mux_140_o11 (M_s_q[1]_aState[31]_Mux_140_o)
+     LD:D                      0.036          aState_0
+    ----------------------------------------
+    Total                      2.820ns (1.614ns logic, 1.206ns route)
+                                       (57.2% logic, 42.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'M_s_q[1]_btn[2]_Mux_209_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.820ns (Levels of Logic = 2)
+  Source:            btn5 (PAD)
+  Destination:       cState_0 (LATCH)
+  Destination Clock: M_s_q[1]_btn[2]_Mux_209_o falling
+
+  Data Path: btn5 to cState_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            13   1.328   1.206  btn5_IBUF (btn5_IBUF)
+     LUT4:I2->O            1   0.250   0.000  Mmux_M_s_q[1]_cState[31]_Mux_268_o11 (M_s_q[1]_cState[31]_Mux_268_o)
+     LD:D                      0.036          cState_0
+    ----------------------------------------
+    Total                      2.820ns (1.614ns logic, 1.206ns route)
+                                       (57.2% logic, 42.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'M_s_q[1]_btn[4]_Mux_337_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.820ns (Levels of Logic = 2)
+  Source:            btn5 (PAD)
+  Destination:       eState_0 (LATCH)
+  Destination Clock: M_s_q[1]_btn[4]_Mux_337_o falling
+
+  Data Path: btn5 to eState_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            13   1.328   1.206  btn5_IBUF (btn5_IBUF)
+     LUT4:I2->O            1   0.250   0.000  Mmux_M_s_q[1]_eState[31]_Mux_396_o11 (M_s_q[1]_eState[31]_Mux_396_o)
+     LD:D                      0.036          eState_0
+    ----------------------------------------
+    Total                      2.820ns (1.614ns logic, 1.206ns route)
+                                       (57.2% logic, 42.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'M_s_q[1]_btn[3]_Mux_273_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.820ns (Levels of Logic = 2)
+  Source:            btn5 (PAD)
+  Destination:       dState_0 (LATCH)
+  Destination Clock: M_s_q[1]_btn[3]_Mux_273_o falling
+
+  Data Path: btn5 to dState_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            13   1.328   1.206  btn5_IBUF (btn5_IBUF)
+     LUT4:I2->O            1   0.250   0.000  Mmux_M_s_q[1]_dState[31]_Mux_332_o11 (M_s_q[1]_dState[31]_Mux_332_o)
+     LD:D                      0.036          dState_0
+    ----------------------------------------
+    Total                      2.820ns (1.614ns logic, 1.206ns route)
+                                       (57.2% logic, 42.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'M_s_q[1]_btn[1]_Mux_145_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.820ns (Levels of Logic = 2)
+  Source:            btn5 (PAD)
+  Destination:       bState_0 (LATCH)
+  Destination Clock: M_s_q[1]_btn[1]_Mux_145_o falling
+
+  Data Path: btn5 to bState_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            13   1.328   1.206  btn5_IBUF (btn5_IBUF)
+     LUT4:I2->O            1   0.250   0.000  Mmux_M_s_q[1]_bState[31]_Mux_204_o11 (M_s_q[1]_bState[31]_Mux_204_o)
+     LD:D                      0.036          bState_0
+    ----------------------------------------
+    Total                      2.820ns (1.614ns logic, 1.206ns route)
+                                       (57.2% logic, 42.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              3.526ns (Levels of Logic = 3)
+  Source:            rst_n (PAD)
+  Destination:       reset_cond/M_stage_q_3 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst_n to reset_cond/M_stage_q_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O              4   0.255   0.803  M_reset_cond_in1_INV_0 (M_reset_cond_in)
+     begin scope: 'reset_cond:in'
+     FDS:S                     0.459          M_stage_q_0
+    ----------------------------------------
+    Total                      3.526ns (2.042ns logic, 1.484ns route)
+                                       (57.9% logic, 42.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'M_s_q[1]_btn[1]_Mux_145_o'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              5.336ns (Levels of Logic = 2)
+  Source:            bState_0 (LATCH)
+  Destination:       ledio<7> (PAD)
+  Source Clock:      M_s_q[1]_btn[1]_Mux_145_o falling
+
+  Data Path: bState_0 to ledio<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               4   0.581   0.912  bState_0 (bState_0)
+     LUT2:I0->O            1   0.250   0.681  Mmux_n0264[31:0]11 (ledio_7_OBUF)
+     OBUF:I->O                 2.912          ledio_7_OBUF (ledio<7>)
+    ----------------------------------------
+    Total                      5.336ns (3.743ns logic, 1.593ns route)
+                                       (70.1% logic, 29.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'M_s_q[1]_btn[2]_Mux_209_o'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              5.508ns (Levels of Logic = 2)
+  Source:            cState_0 (LATCH)
+  Destination:       ledio<6> (PAD)
+  Source Clock:      M_s_q[1]_btn[2]_Mux_209_o falling
+
+  Data Path: cState_0 to ledio<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               4   0.581   1.080  cState_0 (cState_0)
+     LUT6:I2->O            1   0.254   0.681  Mxor_n0265_0_xo<0>1 (ledio_6_OBUF)
+     OBUF:I->O                 2.912          ledio_6_OBUF (ledio<6>)
+    ----------------------------------------
+    Total                      5.508ns (3.747ns logic, 1.761ns route)
+                                       (68.0% logic, 32.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'M_s_q[1]_btn[3]_Mux_273_o'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              5.441ns (Levels of Logic = 2)
+  Source:            dState_0 (LATCH)
+  Destination:       ledio<6> (PAD)
+  Source Clock:      M_s_q[1]_btn[3]_Mux_273_o falling
+
+  Data Path: dState_0 to ledio<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               4   0.581   1.032  dState_0 (dState_0)
+     LUT6:I3->O            1   0.235   0.681  Mxor_n0265_0_xo<0>1 (ledio_6_OBUF)
+     OBUF:I->O                 2.912          ledio_6_OBUF (ledio<6>)
+    ----------------------------------------
+    Total                      5.441ns (3.728ns logic, 1.713ns route)
+                                       (68.5% logic, 31.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'M_s_q[1]_btn[4]_Mux_337_o'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              5.342ns (Levels of Logic = 2)
+  Source:            eState_0 (LATCH)
+  Destination:       ledio<5> (PAD)
+  Source Clock:      M_s_q[1]_btn[4]_Mux_337_o falling
+
+  Data Path: eState_0 to ledio<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               3   0.581   0.874  eState_0 (eState_0)
+     LUT2:I0->O            2   0.250   0.725  Mmux_n0266[31:0]11 (ledio_2_OBUF)
+     OBUF:I->O                 2.912          ledio_5_OBUF (ledio<5>)
+    ----------------------------------------
+    Total                      5.342ns (3.743ns logic, 1.599ns route)
+                                       (70.1% logic, 29.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'M_s_q[1]_btn[0]_Mux_83_o'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              5.508ns (Levels of Logic = 2)
+  Source:            aState_0 (LATCH)
+  Destination:       ledio<4> (PAD)
+  Source Clock:      M_s_q[1]_btn[0]_Mux_83_o falling
+
+  Data Path: aState_0 to ledio<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               4   0.581   1.080  aState_0 (aState_0)
+     LUT4:I0->O            1   0.254   0.681  Mxor_n0269_0_xo<0>1 (ledio_1_OBUF)
+     OBUF:I->O                 2.912          ledio_1_OBUF (ledio<1>)
+    ----------------------------------------
+    Total                      5.508ns (3.747ns logic, 1.761ns route)
+                                       (68.0% logic, 32.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'M_s_q[1]_GND_200_o_Mux_463_o'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              4.174ns (Levels of Logic = 1)
+  Source:            easyMode_0 (LATCH)
+  Destination:       ledr<2> (PAD)
+  Source Clock:      M_s_q[1]_GND_200_o_Mux_463_o falling
+
+  Data Path: easyMode_0 to ledr<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.581   0.681  easyMode_0 (easyMode_0)
+     OBUF:I->O                 2.912          ledr_2_OBUF (ledr<2>)
+    ----------------------------------------
+    Total                      4.174ns (3.493ns logic, 0.681ns route)
+                                       (83.7% logic, 16.3% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 15 / 8
+-------------------------------------------------------------------------
+Delay:               6.434ns (Levels of Logic = 3)
+  Source:            btn<2> (PAD)
+  Destination:       ledio<6> (PAD)
+
+  Data Path: btn<2> to ledio<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.328   1.259  btn_2_IBUF (btn_2_IBUF)
+     LUT6:I0->O            1   0.254   0.681  Mxor_n0265_0_xo<0>1 (ledio_6_OBUF)
+     OBUF:I->O                 2.912          ledio_6_OBUF (ledio<6>)
+    ----------------------------------------
+    Total                      6.434ns (4.494ns logic, 1.940ns route)
+                                       (69.8% logic, 30.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock M_s_q[1]_GND_200_o_Mux_463_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.074|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock M_s_q[1]_btn[0]_Mux_83_o
+------------------------+---------+---------+---------+---------+
+                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------+---------+---------+---------+---------+
+M_s_q[1]_btn[0]_Mux_83_o|         |         |    1.675|         |
+clk                     |         |         |    2.246|         |
+------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock M_s_q[1]_btn[1]_Mux_145_o
+-------------------------+---------+---------+---------+---------+
+                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------+---------+---------+---------+---------+
+M_s_q[1]_btn[1]_Mux_145_o|         |         |    1.675|         |
+clk                      |         |         |    2.246|         |
+-------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock M_s_q[1]_btn[2]_Mux_209_o
+-------------------------+---------+---------+---------+---------+
+                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------+---------+---------+---------+---------+
+M_s_q[1]_btn[2]_Mux_209_o|         |         |    1.675|         |
+clk                      |         |         |    2.246|         |
+-------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock M_s_q[1]_btn[3]_Mux_273_o
+-------------------------+---------+---------+---------+---------+
+                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------+---------+---------+---------+---------+
+M_s_q[1]_btn[3]_Mux_273_o|         |         |    1.675|         |
+clk                      |         |         |    2.246|         |
+-------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock M_s_q[1]_btn[4]_Mux_337_o
+-------------------------+---------+---------+---------+---------+
+                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------+---------+---------+---------+---------+
+M_s_q[1]_btn[4]_Mux_337_o|         |         |    1.637|         |
+clk                      |         |         |    2.246|         |
+-------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.112|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.94 secs
+ 
+--> 
+
+Total memory usage is 296644 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   35 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+
